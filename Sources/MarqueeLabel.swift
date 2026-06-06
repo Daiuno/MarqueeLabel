@@ -1559,6 +1559,7 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
         
         set {
             if sublabel.attributedText == newValue {
+                updateAndScroll()
                 return
             }
             sublabel.attributedText = newValue
